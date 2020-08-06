@@ -39,7 +39,7 @@ jobs:
         ruby-version: 2.7.1
     - name: build and run tests
       env:
-        DATABASE_URL:  postgres://postgres:@localhost:5432/grocery_test
+        DATABASE_URL:  postgres://postgres:postgres@localhost:5432/grocery_test
         RAILS_ENV: test
         RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY}}
       run: |
