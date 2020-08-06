@@ -36,7 +36,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     - name: setup Ruby
-      uses: actions@setup-ruby@v1
+      uses: actions/setup-ruby@v1
       with:
         ruby-verion: 2.7.1
     - name: build and run tests
